@@ -1,36 +1,60 @@
-// Manipulate the HTML DOM using Javscript
-// const heading = document.createElement("h1");
-// heading.innerHTML = "Namaste Everyone";
-// const root = document.getElementById("root");
-// root.appendChild(heading);
+/***
+ *
+ * Created A Server
+ * HMR - Hot Module Replacement
+ * File Watcher algorithm - C++
+ * BUNDLING
+ * MINIFY
+ * Cleaning our Code
+ * Dev abd Production Build
+ * Super Fast build algorithm
+ * Image Optimization
+ * Caching while development
+ * Compression
+ * Compatble with older version of browser
+ * HTTPS on dev
+ * port Number
+ * Consistent Hashing Algorithm
+ * Zero Config
+ *
+ *
+ *
+ * Transitive Dependencies
+ */
 
-// Manipulate the HTML DOM using React
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-// Create nested React Elements
 const heading = React.createElement(
   "h1",
   {
     id: "title",
   },
-  "heading"
+  "Heading 1 for parcel"
 );
-const heading1 = React.createElement(
-  "h1",
+
+const heading2 = React.createElement(
+  "h2",
   {
     id: "title",
   },
-  "heading1"
+  "Heading 2"
 );
 
 const container = React.createElement(
   "div",
   {
     id: "container",
+    hello: "world",
   },
-  [heading, heading1]
+  [heading, heading2]
 );
 
-// create root using createRoot
+console.log(heading);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// passing react element inside root
+
+//passing a react element inside the root
+
+//async defer
 root.render(container);
