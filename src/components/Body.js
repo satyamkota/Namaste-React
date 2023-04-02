@@ -41,7 +41,7 @@ const Body = () => {
         >
           Search
         </button>
-        <h1>{searchText}</h1>
+        {/* <h1>{searchText}</h1> */}
       </div>
       <div className="restaurant-list">
         {restaurants.map((restaurant) => {
